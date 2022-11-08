@@ -1,0 +1,43 @@
+.customers-ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+.title-center-customers{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.customers-list {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  width: 210px;
+  height: 92px;
+
+@include desktop
+ { width: 170px;
+  height: 92px;
+ }
+
+ 
+  border: 1px solid var(--list-app-icons);
+  border-radius: 4px;
+  color: var(--list-app-icons);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--btn-color);
+    color: var(--btn-color);
+  }
+}
+
+.customers-list-svg {
+  fill: currentColor;
+}

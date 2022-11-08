@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--text-color);
+  background-color: var(--advantage-color);
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.no-scroll{
+  overflow: hidden;
+}

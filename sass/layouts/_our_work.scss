@@ -1,0 +1,30 @@
+.works {
+  display: flex;
+  gap: 30px;
+}
+.works__mobile {
+  display: none;
+  @include desktop {
+    display: inline;
+  }
+}
+
+.works__description {
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 370px;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  color: var(--advantage-color);
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+.works__div {
+  position: relative;
+}
