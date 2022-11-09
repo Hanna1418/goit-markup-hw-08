@@ -11,14 +11,15 @@
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--bg-gradient), url(/images/hero-bg-mob.jpg);
+  background-image: url(/images/hero-bg-mob.jpg), var(--bg-gradient)    ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--hero-img);
 
   @include retina {
-    background-image: var(--bg-gradient), url(/images/hero-bg-mob-2x.jpg);
+    background-image: url(/images/hero-bg-mob-2x.jpg), var(--bg-gradient) 
+    ;
   }
 
   @include tablet {
