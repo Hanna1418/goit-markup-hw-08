@@ -5,7 +5,7 @@
 .works__mobile {
   display: none;
   @include desktop {
-    display: inline;
+    display: block;
   }
 }
 

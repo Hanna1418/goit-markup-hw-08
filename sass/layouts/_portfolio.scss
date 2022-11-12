@@ -6,7 +6,6 @@
 
 .main-background {
   background-color: var(--advantage-color);
-  width: 370px;
   position: relative;
 }
 
@@ -53,7 +52,18 @@
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  width: 370px;
+  width: 290 px;
+  @include mobile {
+    width: 450px;
+  }
+
+  @include tablet {
+    width: 354px;
+  }
+
+  @include desktop {
+    width: 370px;
+  }
 }
 
 .main {
@@ -72,4 +82,26 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color-light);
+}
+
+.photo-portfolio {
+  width: 290px;
+  @include mobile {
+    width: 450px;
+  }
+
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 370px;
+  }
+}
+.portfolio-texno {
+  @include tablet {
+    height: 147.07px;
+  }
+  @include desktop {
+    height: auto;
+  }
 }

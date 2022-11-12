@@ -241,6 +241,7 @@ width: 450px;
   .real-checkbox:checked + &::before {
     opacity: 1;
   }
+
 }
 
 .real-checkbox {
@@ -253,16 +254,26 @@ width: 450px;
 
 .god-text {
   font-style: Regular;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--text-color-light);
+
+  @include desktop{
+    font-size: 14px;
+  line-height: 24px;
+  }
 }
 .god-text-next {
   font-style: Regular;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--btn-color);
   text-underline-offset: 3px;
+  @include desktop{
+    font-size: 14px;
+  line-height: 24px;
+  }
+
 }

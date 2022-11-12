@@ -9,19 +9,18 @@
   @include desktop
   {display: flex;
     flex-wrap: nowrap;
-    gap: 0px;
+    // gap: 0px;
   }
 }
 
-.benefits__list {margin-bottom: 30px;
-     &:last-child {
-      margin-bottom: 0px;}
+.benefits__list {
+  &.benefits__list:not(:last-child) {
+margin-bottom: 30px;}
+@include tablet{ &.benefits__list:not(:last-child)
+  { margin-bottom: 0px; }
+}
 
-  @include desktop
- { margin-right: 30px;
-  &:last-child {
-    margin-right: 0px;}
-  }
+
   &::before {
     content: "";
     display: block;
@@ -39,6 +38,7 @@
     background-position: center;
     border-radius: 4px;
   }
+ 
 }
 .benefits__details{
   @include tablet{
@@ -90,12 +90,16 @@
   background-size: 70px;
 }
 .benefits__title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @include tablet{
+    text-align:start;
+  }
 }
 
 .benefits__text {

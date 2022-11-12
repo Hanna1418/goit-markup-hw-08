@@ -3,14 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo-futer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include desktop {
-    display: inline;
-  }
-}
+
 .futer-ul {
   display: flex;
   flex-wrap: wrap;
@@ -25,12 +18,17 @@
   }
 }
 .foter-tabl {
+  margin-bottom: 60px;
   @include tablet {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 60px;
+   
   }
+  @include desktop{
+    align-items: baseline;
+    margin-bottom: 0px;
+  }
+
 }
 
 .class-one-div {
@@ -40,6 +38,11 @@
   }
 }
 .class-two-div {
+  text-align: center;
+  @include desktop {
+    text-align: start;
+  }
+
   @include desktop {
     display: inline;
     margin-right: 70px;

@@ -5,10 +5,16 @@
 
 }
 .title-center-customers{
+  justify-content: space-between;
+
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  // @include mobile{
+  //   justify-content: ;
+  // }
+ 
+  
 }
 
 .customers-list {
@@ -16,10 +22,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  width: 125px;
+  height: 80px;
+
+ @include mobile{
   width: 210px;
   height: 92px;
+ }
+  
+  
+  @include tablet{
+    width: 226px;
+  height: 92px;
 
+  }
 @include desktop
  { width: 170px;
   height: 92px;

@@ -3,6 +3,9 @@
   @include tablet {
     display: flex;
   }
+  @include desktop{
+    display: flex;
+  }
 }
 
 .header {
@@ -68,6 +71,8 @@
   &:hover {
     color: var(--btn-color);
   }
+
+
 }
 
 .navigation__link.link.current {
@@ -96,21 +101,28 @@
 }
 
 .notnavigation__menu {
-  margin-left: 95px;
+// padding-top: 21px;
+// padding-bottom: 21px;
+
+    margin-left: 95px;
+  
   @include desktop {
     display: flex;
     justify-content: center;
     align-items: center;
+//     padding-top: 32px;
+// padding-bottom: 32px;
     margin-left: 345px;
   }
 }
 .tel-mail {
+  padding-bottom: 21px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 10px;
+ 
   color: var(--text-color-light);
   display: flex;
   align-items: center;
@@ -122,6 +134,25 @@
   @include desktop {
     font-size: 14px;
     padding-top: 0px;
+  }
+}
+.icon-tel{
+  @include desktop{
+    width: 10px;
+    height: 16px;
+  }
+}
+.icon-mail{
+  @include desktop{
+    width: 16px;
+    height: 12px;
+  }
+
+}
+.notnav__list{
+  margin-bottom: 10px;
+  @include desktop{
+    margin-bottom: 0px;
   }
 }
 .notnavigation__tel {
@@ -133,6 +164,7 @@
   color: var(--text-color-light);
 
   padding-top: 21px;
+    // padding-bottom: 21px;
   display: flex;
   align-items: center;
 
@@ -142,12 +174,21 @@
     color: var(--btn-color);
   }
   @include desktop {
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     font-size: 14px;
     padding-top: 0px;
+
   }
+
+
 }
 
 .notnavigation__gap {
+  
+  @include desktop{
+     padding-top: 32px;
+padding-bottom: 32px;}
   gap: 10px;
 }
 

@@ -2,8 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
-
+  margin-bottom: 40px;
+  width: 330px;
+  @include mobile {
+    width: 333px;
+  }
+  @include tablet {
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+  }
   @include desktop {
     flex-wrap: nowrap;
     justify-content: center;
