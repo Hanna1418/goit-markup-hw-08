@@ -500,11 +500,13 @@ body {
 @media screen and (min-width: 768px) {
   .header__nav {
     display: flex;
+    margin-left: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__nav {
     display: flex;
+    margin-left: 93px;
   }
 }
 
@@ -546,12 +548,6 @@ body {
 
 .header__navigation {
   display: flex;
-  margin-left: 88px;
-}
-@media screen and (min-width: 1200px) {
-  .header__navigation {
-    margin-left: 93px;
-  }
 }
 
 .navigation__li {
@@ -1288,6 +1284,10 @@ body {
   transform: translateY(0);
 }
 
+.portfolio-hover:focus .text-absolute {
+  transform: translateY(0);
+}
+
 .portfolio-subjunctive {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
@@ -1396,6 +1396,7 @@ body {
   .foter-tabl {
     align-items: baseline;
     margin-bottom: 0px;
+    margin-right: 93px;
   }
 }
 
@@ -1467,11 +1468,6 @@ body {
     margin-top: 0px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer-div {
-    margin-right: 93px;
-  }
-}
 
 .footer-name {
   text-align: center;
@@ -1523,7 +1519,6 @@ body {
 }
 
 .futer-form input {
-  margin-bottom: 20px;
   display: block;
   min-width: 295px;
   height: 50px;
@@ -1563,7 +1558,6 @@ body {
 @media screen and (min-width: 1200px) {
   .futer-form input {
     min-width: 358px;
-    margin-bottom: 0px;
   }
 }
 
@@ -1576,6 +1570,7 @@ body {
 }
 
 .mailing-list-btn {
+  margin-top: 20px;
   border: none;
   outline: none;
   font-family: inherit;
@@ -1599,4 +1594,9 @@ body {
 .mailing-list-btn:hover, .mailing-list-btn:focus {
   background-color: var(--btn-color-dark);
   color: var(--advantage-color);
+}
+@media screen and (min-width: 1200px) {
+  .mailing-list-btn {
+    margin-top: 0px;
+  }
 }/*# sourceMappingURL=main.css.map */

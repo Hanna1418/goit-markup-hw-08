@@ -4,10 +4,10 @@
   @include tablet {
     margin-top: 0px;
   }
-  @include desktop {
+  // @include desktop {
   
-    margin-right: 93px;
-  }
+  //   margin-right: 93px;
+  // }
 }
 
 .footer-name {
@@ -59,7 +59,7 @@
 }
 
 .futer-form input {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   display: block;
   min-width: 295px;
   height: 50px;
@@ -83,7 +83,7 @@
   }
   @include desktop {
     min-width: 358px;
-    margin-bottom: 0px;
+   
   }
 }
 
@@ -96,6 +96,7 @@
 }
 
 .mailing-list-btn {
+  margin-top: 20px;
   border: none;
   outline: none;
   font-family: inherit;
@@ -120,5 +121,8 @@
   &:focus {
     background-color: var(--btn-color-dark);
     color: var(--advantage-color);
+  }
+  @include desktop{
+    margin-top: 0px;
   }
 }

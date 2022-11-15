@@ -45,6 +45,11 @@
 
 .portfolio-hover:hover .text-absolute {
   transform: translateY(0);
+  
+}
+.portfolio-hover:focus .text-absolute {
+  transform: translateY(0);
+  
 }
 
 .portfolio-subjunctive {
